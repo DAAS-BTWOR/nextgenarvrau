@@ -1,0 +1,272 @@
+/* E-Sports Hub & Calculator Styles */
+
+.esports-hero {
+  position: relative;
+  padding: 4rem 0 3rem 0;
+  background: radial-gradient(circle at 50% 10%, rgba(255, 0, 122, 0.12) 0%, rgba(138, 43, 226, 0.08) 50%, transparent 80%);
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 0, 122, 0.2);
+}
+
+.esports-pill {
+  background: rgba(255, 0, 122, 0.12) !important;
+  color: #FF66AA !important;
+  border-color: rgba(255, 0, 122, 0.3) !important;
+}
+
+.esports-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02em;
+}
+
+/* Tournament Feature Card */
+.tournament-banner-card {
+  background: linear-gradient(135deg, rgba(25, 12, 35, 0.9) 0%, rgba(12, 16, 28, 0.95) 100%);
+  border: 1px solid rgba(255, 0, 122, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6), 0 0 30px rgba(255, 0, 122, 0.15);
+}
+
+.tournament-meta-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.prize-pool-tag {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-emerald);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0 1.5rem 0;
+}
+
+/* Podium Top 3 Cards */
+.podium-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr 1fr;
+  gap: 1.5rem;
+  align-items: flex-end;
+  margin-bottom: 3.5rem;
+}
+
+.podium-card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  position: relative;
+  transition: all var(--transition-normal);
+}
+
+.podium-card.rank-1 {
+  background: linear-gradient(180deg, rgba(35, 30, 15, 0.9) 0%, rgba(16, 22, 34, 0.85) 100%);
+  border: 2px solid #FFD700;
+  box-shadow: 0 0 35px rgba(255, 215, 0, 0.25);
+  transform: translateY(-15px);
+  padding: 2.5rem 1.5rem;
+}
+
+.podium-card.rank-2 {
+  background: linear-gradient(180deg, rgba(25, 30, 40, 0.9) 0%, rgba(16, 22, 34, 0.85) 100%);
+  border: 2px solid #C0C0C0;
+  box-shadow: 0 0 25px rgba(192, 192, 192, 0.2);
+}
+
+.podium-card.rank-3 {
+  background: linear-gradient(180deg, rgba(35, 22, 15, 0.9) 0%, rgba(16, 22, 34, 0.85) 100%);
+  border: 2px solid #CD7F32;
+  box-shadow: 0 0 25px rgba(205, 127, 50, 0.2);
+}
+
+.podium-crown {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.podium-rank-badge {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+}
+
+.podium-card.rank-1 .podium-rank-badge { color: #FFD700; }
+.podium-card.rank-2 .podium-rank-badge { color: #E2E8F0; }
+.podium-card.rank-3 .podium-rank-badge { color: #F6AD55; }
+
+.podium-team-name {
+  font-size: 1.4rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.podium-score-box {
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: var(--radius-md);
+  padding: 0.75rem;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+  font-family: var(--font-mono);
+}
+
+.podium-score-val {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.podium-score-lbl {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+/* Points Calculator Card */
+.calculator-box {
+  background: var(--bg-card);
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  border-radius: var(--radius-xl);
+  padding: 2.5rem;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 240, 255, 0.1);
+  margin-bottom: 4rem;
+}
+
+.calculator-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2.5rem;
+}
+
+.calc-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.calc-display {
+  background: rgba(8, 12, 20, 0.9);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calc-total-pts {
+  font-family: var(--font-heading);
+  font-size: 3.5rem;
+  font-weight: 900;
+  color: var(--accent-cyan);
+  line-height: 1;
+  text-shadow: 0 0 20px rgba(0, 240, 255, 0.5);
+  margin: 0.5rem 0;
+}
+
+.calc-breakdown-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.calc-breakdown-row.total-row {
+  border-bottom: none;
+  border-top: 1px solid var(--border-glass);
+  padding-top: 0.85rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  font-size: 1.05rem;
+}
+
+.formula-quote {
+  background: rgba(0, 240, 255, 0.05);
+  border-left: 3px solid var(--accent-cyan);
+  padding: 0.75rem 1rem;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #94A3B8;
+  margin-top: 1rem;
+}
+
+/* Standings Leaderboard Table */
+.standings-table-box {
+  margin-bottom: 4rem;
+}
+
+.rank-badge-cell {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+}
+
+.rank-1-cell { background: #FFD700; color: #000; box-shadow: 0 0 10px rgba(255, 215, 0, 0.5); }
+.rank-2-cell { background: #C0C0C0; color: #000; }
+.rank-3-cell { background: #CD7F32; color: #FFF; }
+.rank-default-cell { background: rgba(255, 255, 255, 0.08); color: var(--text-secondary); }
+
+.team-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.team-tag-pill {
+  font-size: 0.7rem;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 255, 255, 0.08);
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+}
+
+.total-points-highlight {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--accent-cyan);
+}
+
+@media (max-width: 1024px) {
+  .tournament-banner-card {
+    grid-template-columns: 1fr;
+  }
+  .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  .podium-container {
+    grid-template-columns: 1fr;
+    align-items: stretch;
+  }
+  .podium-card.rank-1 {
+    transform: none;
+  }
+}
